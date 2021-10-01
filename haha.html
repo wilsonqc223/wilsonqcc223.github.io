@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+    <script>
+	var sum=0 
+        function validateForm(){
+            var x=document.forms["myForm"]["fname"].value;        
+            if (x==" "){        
+                alert("我有那么弱智吗？");
+                document.write("<a href=\"name.html\">返回上一页</a>\n"); 
+                document.write("<a href=\"index1.html\">下一步</a>"); 
+                
+                return false;        
+            } else if(sum>5){
+		alert("打个空格。。。");
+		return false;
+	     }else{
+                alert("输错了!不是 !");sum=sum+1;
+                return false;
+            }   
+        }
+        
+
+    </script>
+    
+</head>
+<body>
+    <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+        下载地址：<input type="text" name="fname">
+        <input type="submit" value="Submit">
+
+    </form>
+<img src="1.ico" width="1000" height="1000" alt="Planets" usemap="#planetmap">
+
+    <map name="planetmap">
+    <area shape="rect" coords="0,0,2000,2000" target="_blank" alt="Sun" href="Iwannaj.rar">
+    </map>
+</body>

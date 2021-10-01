@@ -1,0 +1,45 @@
+﻿<!--flag=zhejiangwenzhoujiangnanpigechangdaobila-->
+
+
+
+<!DOCTYPE html>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+    <script>
+	
+        function validateForm(){        
+            var x=document.forms["myForm"]["fname"].value;   
+            if (x==" "||x=="空格"){        
+                alert("亏你找得到");
+		alert("但是不对");
+                return false;  
+            } else if(x=="zhejiangwenzhoujiangnanpigechangdaobila"){
+                alert("说了不让开。。。");
+		        document.write("<a href=\"index1.html\">下一步</a>"); 
+                return false;
+            }else if(x=="o2"){
+		alert("不是这丫");
+		document.write("<a href=\"Dow.html\">下一步</a>\n"); 
+		return false;
+	    }else  {
+		alert("你倒是找找啊");
+		return false;
+	    }
+        }
+    </script>
+</head>
+<body>
+	<h1>经典之找Flag</h1><code>不用开F12</code>
+    <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+        <input type="text" name="fname">
+        <input type="submit" value="Submit">
+
+    </form>
+<img src="1.ico" width="1000" height="1000" alt="Planets" usemap="#planetmap">
+
+    <map name="planetmap">
+	<area shape="rect" coords="550,300,600,350" target="_blank" alt="Sun" href="index1.html">
+    <area shape="rect" coords="0,0,2000,2000" target="_blank" alt="Sun" href="flag.txt">
+    </map>
+</body>

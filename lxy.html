@@ -1,4 +1,19 @@
 <!DOCTYPE html>
-<body>
-<video src=5.mp4 controls="controls"> </video>
-</body> 
+<html>
+  <head>
+    <title>camera</title>
+    <script type="text/javascript">
+      function play() {
+        var video = document.getElementById("video");
+        video.play();
+      }  
+    </script>
+  </head>
+  <body>
+ 
+    <video id="video" width="640" height="360" src="/IMG_3874.mp4" autobuffer onclick="play()"> 
+      <div class="fallback"> <p>You must have an HTML5 capable browser.</p> </div> 
+    </video>
+    
+  </body>
+</html>
